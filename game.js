@@ -9,11 +9,11 @@ function play() {
 
     if (player === valorAleatorio) {
         resultado.innerText = 'Empate';
-    } else if (player === 'pedra' && valorAleatorio === 'tesoura') {
+    } else if (player.toUpperCase() ==='PEDRA' && valorAleatorio === 'TESOURA') {
         resultado.innerText = 'Você ganhou';
-    } else if (player === 'papel' && valorAleatorio === 'pedra') {
+    } else if (player.toUpperCase() === 'PAPEL' && valorAleatorio === 'PEDRA') {
         resultado.innerText = 'Você ganhou';
-    } else if (player === 'tesoura' && valorAleatorio === 'papel') {
+    } else if (player.toUpperCase() === 'TESOURA' && valorAleatorio === 'PAPEL') {
         resultado.innerText = 'Você ganhou';
     } else {
         resultado.innerText = 'Você perdeu';
